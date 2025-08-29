@@ -16,7 +16,7 @@ import { LIST_NAVBAR } from "@/constants/listNavbar";
 
 export function Navbar() {
     return (
-        <header className="w-full fixed top-0 left-0 bg-white/80 backdrop-blur-md py-4 px-4 sm:px-8 z-50">
+        <header className="font-poppins w-full fixed top-0 left-0 bg-white/80 backdrop-blur-md py-4 px-4 sm:px-8 z-50">
             <nav className="flex items-center justify-between border-y border-gray-300 py-2">
                 <h1 className="text-lg font-bold text-gray-800">EcoConnect</h1>
 
@@ -64,7 +64,7 @@ export function Navbar() {
                 </NavigationMenu>
 
                 <Button className="px-5 rounded-full border border-gray-600 text-gray-700 bg-transparent hover:bg-green-700 hover:text-white hover:border-transparent transition">
-                    Login
+                    <Link href="/signin">Login</Link>
                 </Button>
             </nav>
         </header>

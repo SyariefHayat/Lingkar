@@ -8,21 +8,16 @@ export const LIST_NAVBAR = [
         url: "/about"
     },
     {
-        title: "Jaringan",
-        subMenu: [
-            {
-                title: "Jaringan Mitra",
-                url: "/mitra"
-            },
-            {
-                title: "Harga Pasar Daur Ulang",
-                url: "/harga-pasar"
-            }
-        ]
+        title: "Informasi Harga",
+        url: "/price"
+    },
+    {
+        title: "Jaringan Mitra",
+        url: "/mitra"
     },
     {
         title: "Eco Market",
-        url: "/contact"
+        url: "/marketplace"
     },
     {
         title: "Program",

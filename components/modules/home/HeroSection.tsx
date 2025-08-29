@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export function HeroSection() {
     return (
         <section className="w-full min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mt-16 sm:mt-20 text-center">
+            <div className="max-w-4xl mt-16 text-center">
                 <div className="relative w-fit mx-auto mb-3 rounded-full px-4 py-1 text-xs sm:text-sm ring-1 ring-gray-300 hover:ring-gray-500 transition">
                     Sampah Berkurang, Manfaat Bertambah
                 </div>
