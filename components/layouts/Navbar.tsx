@@ -11,7 +11,7 @@ import {
 
 export default function Navbar() {
     return (
-        <nav className="font-poppins flex items-center justify-between px-6 md:px-10 py-4 md:py-6">
+        <nav className="font-poppins flex items-center justify-between px-8 py-4 md:py-6">
             <Link href="/">
                 <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide">
                     Lingkar
@@ -19,14 +19,14 @@ export default function Navbar() {
             </Link>
             <Link href="/signup" className="group space-y-1 hidden sm:block">
                 <div className="relative w-fit">
-                    <p className="text-xs md:text-sm lg:text-base font-semibold tracking-wide">
+                    <p className="text-xs md:text-sm font-semibold tracking-wide">
                         SIAP MENGUBAH SAMPAH
                     </p>
                     <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full" />
                 </div>
 
                 <div className="relative w-fit">
-                    <p className="text-xs md:text-sm lg:text-base font-semibold tracking-wide">
+                    <p className="text-xs md:text-sm font-semibold tracking-wide">
                         MENJADI SESUATU YANG BERNILAI
                     </p>
                     <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full" />
