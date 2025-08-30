@@ -32,7 +32,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
             <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}>
                 <Navbar />
                 {children}
-                {/* <Footer /> */}
+                <Footer />
             </body>
         </html>
     );
