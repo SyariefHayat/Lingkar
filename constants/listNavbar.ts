@@ -8,12 +8,17 @@ export const LIST_NAVBAR = [
         url: "/about"
     },
     {
-        title: "Informasi Harga",
-        url: "/price"
-    },
-    {
-        title: "Jaringan Mitra",
-        url: "/mitra"
+        title: "Fitur",
+        subMenu: [
+            {
+                title: "Informasi Harga",
+                url: "/price"
+            },
+            {
+                title: "Jaringan Mitra",
+                url: "/mitra"
+            }
+        ]
     },
     {
         title: "Eco Market",
@@ -23,17 +28,17 @@ export const LIST_NAVBAR = [
         title: "Program",
         subMenu: [
             {
+                title: "Komunitas",
+                url: "/community"
+            },
+            {
                 title: "Edukasi",
                 url: "/education"
             },
             {
-                title: "Komunitas",
-                url: "/community"
-            }
+                title: "Event",
+                url: "/event"
+            },
         ]
-    },
-    {
-        title: "Hubungi Kami",
-        url: "/contact"
     },
 ]
