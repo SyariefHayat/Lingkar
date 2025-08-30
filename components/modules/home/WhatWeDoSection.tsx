@@ -10,10 +10,10 @@ export default function WhatWeDoSection() {
     const [active, setActive] = useState(1);
 
     return (
-        <section className="w-full min-h-screen lg:h-screen px-8 py-5 sm:py-16 bg-white">
+        <section className="w-full min-h-screen lg:h-screen flex flex-col px-8 py-5 sm:py-16">
             <div className="flex items-center gap-3 mb-8 md:mb-10">
                 <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full border-2"></div>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold">
                     Apa yang Kami Lakukan ?
                 </h3>
             </div>
@@ -28,7 +28,7 @@ export default function WhatWeDoSection() {
                             animate={{ flex: active === item.id ? 4 : 1 }}
                             transition={{ duration: 0.5, ease: "easeInOut" }}
                             className={`
-                                ${item.id !== 1 ? "md:border-l border-t" : "md:border-t-0"} 
+                                ${item.id !== 1 ? "md:border-l border-t md:border-t-0" : "md:border-t-0"} 
                                 p-4 sm:p-6 flex flex-col justify-start text-left cursor-pointer
                                 ${active === item.id ? "bg-green-50" : "bg-white"}
                             `}
