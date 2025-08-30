@@ -13,7 +13,7 @@ export default function Navbar() {
     return (
         <nav className="font-poppins flex items-center justify-between px-8 py-4 md:py-6">
             <Link href="/">
-                <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide">
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide text-gray-900">
                     Lingkar
                 </h1>
             </Link>
@@ -27,7 +27,7 @@ export default function Navbar() {
 
                 <div className="relative w-fit">
                     <p className="text-xs md:text-sm font-semibold tracking-wide">
-                        MENJADI SESUATU YANG BERNILAI
+                        MENJADI SESUATU YANG BERNILAI ?
                     </p>
                     <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full" />
                 </div>
