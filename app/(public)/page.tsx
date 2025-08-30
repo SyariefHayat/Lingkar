@@ -1,4 +1,5 @@
 import HeroSection from "@/components/modules/home/HeroSection";
+import ImportantSection from "@/components/modules/home/ImportantSection";
 import ValueSection from "@/components/modules/home/ValueSection";
 import WhatWeDoSection from "@/components/modules/home/WhatWeDoSection";
 
@@ -8,6 +9,7 @@ export default function Home() {
             <HeroSection />
             <ValueSection />
             <WhatWeDoSection />
+            <ImportantSection />
         </div>
     );
 }

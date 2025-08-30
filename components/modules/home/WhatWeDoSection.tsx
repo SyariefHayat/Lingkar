@@ -10,11 +10,11 @@ export default function WhatWeDoSection() {
     const [active, setActive] = useState(1);
 
     return (
-        <section className="w-full h-screen px-4 sm:px-6 md:px-8 py-10 md:py-16 bg-white">
+        <section className="w-full min-h-screen sm:h-screen px-8 py-16 bg-white">
             <div className="flex items-center gap-3 mb-8 md:mb-10">
                 <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full border-2"></div>
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-600">
-                    Apa yang Kami Lakukan
+                    Apa yang Kami Lakukan ?
                 </h3>
             </div>
 
