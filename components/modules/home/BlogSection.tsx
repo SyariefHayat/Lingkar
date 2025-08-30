@@ -1,53 +1,64 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { LIST_ARTICLE } from "@/constants/listArticle";
 import EachUtils from "@/utils/EachUtils";
+import { LIST_ARTICLE } from "@/constants/listArticle";
+
+import { 
+    Avatar, 
+    AvatarFallback, 
+    AvatarImage 
+} from "@/components/ui/avatar";
 
 export default function BlogSection() {
     return (
-        <section className="relative py-8 sm:py-16">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl lg:mx-0">
-                <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Berita dan Cerita Terbaru</h2>
-                <p className="mt-2 text-lg/8 text-gray-600">Ikuti perjalanan kami dalam menyebarkan kebaikan melalui berbagai program dan inisiatif.</p>
-            </div>
+        <section className="w-full min-h-screen px-8 py-5 sm:py-16 bg-white">
+            <div className="mx-auto max-w-7xl">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">Berita dan Cerita Terbaru</h2>
 
-            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-300 pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                <EachUtils
-                    of={LIST_ARTICLE}
-                    render={(item, index) => (
-                        <article key={index} className="flex max-w-xl flex-col items-start justify-between">
-                            <figure className="w-full h-full rounded-xl overflow-hidden mb-4">
-                                <img src={item.backgroundImage} alt={item.title} className="w-full h-full object-cover object-center" />
-                            </figure>
+                <div className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-12 border-t border-gray-200 pt-10 sm:mt-5 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                    <EachUtils
+                        of={LIST_ARTICLE}
+                        render={(item, index) => (
+                            <article 
+                                key={index} 
+                                className="flex flex-col justify-between rounded-2xl shadow-sm hover:shadow-md transition duration-300 bg-white overflow-hidden border border-gray-100"
+                            >
+                                <figure className="w-full aspect-[16/9] overflow-hidden">
+                                    <img 
+                                        src={item.backgroundImage} 
+                                        alt={item.title} 
+                                        className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
+                                    />
+                                </figure>
 
-                            <div>
-                                <h3 className="mt-3 text-lg/6 font-semibold">
-                                    {item.title}
-                                </h3>
-                                <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">{item.description}</p>
-                            </div>
-
-                            <div className="relative mt-8 flex items-center gap-x-4">
-                                <Avatar className="size-10 bg-gray-50">
-                                    <AvatarImage src="https://github.com/shadcn.png" />
-                                    <AvatarFallback>{item.author?.name}</AvatarFallback>
-                                </Avatar>
-
-                                <div className="text-sm/6">
-                                    <p className="relative font-semibold text-gray-900">
-                                        <span>
-                                            {item.author.name}
-                                        </span>
+                                <div className="flex flex-col flex-1 p-6">
+                                    <h3 className="text-xl font-semibold text-gray-900 hover:text-gray-700 transition">
+                                        {item.title}
+                                    </h3>
+                                    <p className="mt-3 line-clamp-3 text-sm text-gray-600">
+                                        {item.description}
                                     </p>
-                                    <time dateTime={item.datetime} className="text-gray-500">
-                                        {item.date}
-                                    </time>
+
+                                    <div className="relative mt-6 flex items-center gap-x-3">
+                                        <Avatar className="size-10 bg-gray-100 border">
+                                            <AvatarImage src={"https://github.com/shadcn.png"} />
+                                            <AvatarFallback>
+                                                {item.author?.name?.[0] || "?"}
+                                            </AvatarFallback>
+                                        </Avatar>
+
+                                        <div className="text-sm">
+                                            <p className="font-medium text-gray-900">
+                                                {item.author?.name}
+                                            </p>
+                                            <time dateTime={item.datetime} className="text-gray-500 text-xs">
+                                                {item.date}
+                                            </time>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-                    )}
-                />
-            </div>
+                            </article>
+                        )}
+                    />
+                </div>
             </div>
         </section>
     )

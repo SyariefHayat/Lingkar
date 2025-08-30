@@ -16,7 +16,7 @@ export const LIST_ARTICLE = [
             name: "Rizky Pratama",
             role: "Pemerhati Lingkungan",
         },
-        backgroundImage: "https://images.unsplash.com/photo-1581578017421-1b1c85e8c221",
+        backgroundImage: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
     },
     {
         datetime: "2024-08-10",
@@ -35,7 +35,7 @@ export const LIST_ARTICLE = [
             name: "Dewi Lestari",
             role: "Founder Startup Hijau",
         },
-        backgroundImage: "https://images.unsplash.com/photo-1599058918144-98b6f309d11d",
+        backgroundImage: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
     },
     {
         datetime: "2024-08-01",
