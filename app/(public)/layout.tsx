@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="en">
-            <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}>
+            <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased font-poppins`}>
                 <Navbar />
                 {children}
                 <Footer />
