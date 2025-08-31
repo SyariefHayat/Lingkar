@@ -1,4 +1,5 @@
 import BlogSection from "@/components/modules/home/BlogSection";
+import CtaSection from "@/components/modules/home/CtaSection";
 import HeroSection from "@/components/modules/home/HeroSection";
 import ImportantSection from "@/components/modules/home/ImportantSection";
 import ValueSection from "@/components/modules/home/ValueSection";
@@ -13,7 +14,8 @@ export default function Home() {
             <WhatWeDoSection />
             <ImportantSection />
             <WhyImportantSection />
-            <BlogSection />
+            <CtaSection />
+            {/* <BlogSection /> */}
         </div>
     );
 }
