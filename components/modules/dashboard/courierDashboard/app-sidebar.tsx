@@ -16,7 +16,7 @@ import { NavMain } from "./nav-main"
 import { NavDocuments } from "./nav-documents"
 import { NavSecondary } from "./nav-secondary"
 import { NavUser } from "./nav-user"
-import { LIST_COURIER_NAVBAR_DB } from "@/constants/listCourierNavbarDb"
+import { LIST_COURIER_NAVBAR_DB } from "@/constants/listCourierNavbarDB"
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     return (
