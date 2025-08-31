@@ -12,10 +12,11 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from "@/components/ui/sidebar"
+
 import { NavMain } from "./nav-main"
+import { NavUser } from "./nav-user"
 import { NavDocuments } from "./nav-documents"
 import { NavSecondary } from "./nav-secondary"
-import { NavUser } from "./nav-user"
 import { LIST_COURIER_NAVBAR_DB } from "@/constants/listCourierNavbarDB"
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
