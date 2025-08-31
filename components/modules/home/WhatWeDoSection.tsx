@@ -12,7 +12,7 @@ export default function WhatWeDoSection() {
     return (
         <section className="w-full min-h-screen lg:h-screen flex flex-col px-8 py-5 sm:py-16">
             <div className="flex items-center gap-3 mb-8 md:mb-10">
-                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full border-2"></div>
+                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-green-500"></div>
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold">
                     Apa yang Kami Lakukan ?
                 </h3>

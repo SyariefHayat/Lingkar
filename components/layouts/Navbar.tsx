@@ -41,7 +41,7 @@ export default function Navbar() {
     return (
         <nav className="font-poppins flex items-center justify-between px-8 py-4 md:py-6">
             <Link href="/">
-                <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide text-gray-900">
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide text-gray-900 hover:text-green-500 transition-colors">
                     Lingkar
                 </h1>
             </Link>
@@ -90,7 +90,7 @@ export default function Navbar() {
             </div>
 
             <Link href="/signin" className="group space-y-1 hidden lg:block">
-                <Button className="bg-transparent text-black border border-black hover:text-white rounded-full cursor-pointer">Signin</Button>
+                <Button className="bg-transparent text-black border border-black hover:text-white rounded-full cursor-pointer">Login</Button>
             </Link>
 
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>

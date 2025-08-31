@@ -18,14 +18,14 @@ export default function HeroSection() {
             <div className="w-full flex flex-col md:flex-row items-center justify-between gap-8 mt-12">
                 <div className="w-full md:w-[40%] flex flex-col gap-6">
                     <Link href="/">
-                        <Button className="w-1/2 py-5 bg-transparent text-green-600 border border-green-400 rounded-tr-4xl text-lg hover:bg-green-50 transition cursor-pointer">
+                        <Button className="w-full lg:w-1/2 py-5 bg-transparent text-green-600 border border-green-400 rounded-tr-4xl text-lg hover:bg-green-50 transition cursor-pointer">
                             Hubungi Kami
                         </Button>
                     </Link>
-                    <div className="w-full h-64 bg-[url('/hero-1.jpg')] bg-cover bg-center rounded-2xl shadow-md"></div>
+                    <div className="w-full h-64 bg-[url('/hero-1.webp')] bg-cover bg-center rounded-2xl shadow-md"></div>
                 </div>
 
-                <div className="w-full md:w-[60%] h-80 bg-[url('/hero-2.jpg')] bg-cover bg-center rounded-2xl shadow-md"></div>
+                <div className="w-full md:w-[60%] h-80 bg-[url('/hero-2.webp')] bg-cover bg-center rounded-2xl shadow-md"></div>
             </div>
         </section>
     );
