@@ -1,72 +1,56 @@
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Leaf } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className="bg-white text-gray-700 font-poppins md:mt-16 border-t border-gray-100">
-            <div className="max-w-7xl mx-auto px-6 py-16">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-                    <div className="md:col-span-1">
-                        <div className="flex items-center gap-2 mb-4">
-                            <h3 className="text-2xl font-bold text-gray-900">Lingkar</h3>
-                        </div>
-                        <p className="text-gray-600 leading-relaxed mb-6">
-                            Bersama-sama menciptakan perubahan positif melalui pengelolaan
-                            sampah yang lebih bijak dan berkelanjutan.
-                        </p>
+        <footer aria-label="Footer" className="bg-gray-50 px-6 pt-16 pb-6 flex flex-col items-center border-t border-gray-200">
+            <div className="flex flex-col md:flex-row justify-between w-full max-w-7xl">
+                <div className="flex-1 flex flex-col mr-10 mb-8 md:mb-0">
+                    <div className="flex items-center gap-2">
+                        <h2 className="text-2xl font-bold">LINGKAR</h2>
                     </div>
+                    <p className="text-gray-600 text-[15px] mt-4 leading-relaxed max-w-[320px]">
+                        Bersama-sama menciptakan perubahan positif melalui pengelolaan
+                        sampah yang lebih bijak dan berkelanjutan.
+                    </p>
+                </div>
 
+                <div className="flex-[1.5] w-full flex flex-wrap justify-between gap-10">
                     <div>
-                        <h4 className="text-lg font-semibold text-gray-900 mb-4">Navigasi</h4>
+                        <h4 className="text-gray-900 text-lg font-semibold mb-3">Navigasi</h4>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-sm">Beranda</a></li>
-                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-sm">Tentang Kami</a></li>
-                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-sm">Program</a></li>
-                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-sm">Berita</a></li>
-                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-sm">Kontak</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition text-sm">Beranda</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition text-sm">Tentang Kami</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition text-sm">Program</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition text-sm">Berita</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition text-sm">Kontak</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="text-lg font-semibold text-gray-900 mb-4">Layanan</h4>
+                        <h4 className="text-gray-900 text-lg font-semibold mb-3">Layanan</h4>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-sm">Pengelolaan Sampah</a></li>
-                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-sm">Daur Ulang</a></li>
-                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-sm">Konsultasi</a></li>
-                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-sm">Edukasi</a></li>
-                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-sm">FAQ</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition text-sm">Pengelolaan Sampah</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition text-sm">Daur Ulang</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition text-sm">Konsultasi</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition text-sm">Edukasi</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-green-600 transition text-sm">FAQ</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="text-lg font-semibold text-gray-900 mb-4">Kontak</h4>
+                        <h4 className="text-gray-900 text-lg font-semibold mb-3">Kontak</h4>
                         <ul className="space-y-4">
                             <li className="flex items-center gap-3">
-                                <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <Mail className="w-4 h-4 text-green-600" />
-                                </div>
-                                <div>
-                                    <a href="mailto:info@lingkar.org" className="text-gray-600 hover:text-green-600 transition-colors text-sm">
-                                        info@lingkar.org
-                                    </a>
-                                </div>
+                                <Mail className="w-4 h-4 text-green-600" />
+                                <a href="mailto:info@lingkar.org" className="text-gray-600 hover:text-green-600 text-sm">info@lingkar.org</a>
                             </li>
                             <li className="flex items-center gap-3">
-                                <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <Phone className="w-4 h-4 text-green-600" />
-                                </div>
-                                <div>
-                                    <a href="tel:+6281234567890" className="text-gray-600 hover:text-green-600 transition-colors text-sm">
-                                        +62 812 3456 7890
-                                    </a>
-                                </div>
+                                <Phone className="w-4 h-4 text-green-600" />
+                                <a href="tel:+6281234567890" className="text-gray-600 hover:text-green-600 text-sm">+62 812 3456 7890</a>
                             </li>
                             <li className="flex items-center gap-3">
-                                <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <MapPin className="w-4 h-4 text-green-600" />
-                                </div>
-                                <div>
-                                    <span className="text-gray-600 text-sm">Jakarta, Indonesia</span>
-                                </div>
+                                <MapPin className="w-4 h-4 text-green-600" />
+                                <span className="text-gray-600 text-sm">Jakarta, Indonesia</span>
                             </li>
                         </ul>
 
@@ -91,19 +75,14 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="border-t border-gray-200 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-6 py-6">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <div className="text-sm text-gray-600">
-                            &copy; {new Date().getFullYear()} Lingkar. All rights reserved.
-                        </div>
-                        
-                        <div className="flex gap-6 text-sm">
-                            <a href="#" className="text-gray-600 hover:text-green-600 transition-colors">Privacy Policy</a>
-                            <a href="#" className="text-gray-600 hover:text-green-600 transition-colors">Terms of Service</a>
-                            <a href="#" className="text-gray-600 hover:text-green-600 transition-colors">Cookie Policy</a>
-                        </div>
-                    </div>
+            <div className="w-full max-w-7xl border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between">
+                <p className="text-gray-600 text-sm text-center md:text-left">
+                    &copy; {new Date().getFullYear()} Lingkar. All rights reserved.
+                </p>
+                <div className="flex gap-6 mt-4 md:mt-0 text-sm">
+                    <a href="#" className="text-gray-600 hover:text-green-600 transition">Privacy Policy</a>
+                    <a href="#" className="text-gray-600 hover:text-green-600 transition">Terms of Service</a>
+                    <a href="#" className="text-gray-600 hover:text-green-600 transition">Cookie Policy</a>
                 </div>
             </div>
         </footer>

@@ -17,7 +17,7 @@ export default function HeroSection() {
 
             <div className="w-full flex flex-col md:flex-row items-center justify-between gap-8 mt-12">
                 <div className="w-full md:w-[40%] flex flex-col gap-6">
-                    <Link href="/">
+                    <Link href="/contact">
                         <Button className="w-full lg:w-1/2 py-5 bg-transparent text-green-600 border border-green-400 rounded-tr-4xl text-lg hover:bg-green-50 transition cursor-pointer">
                             Hubungi Kami
                         </Button>
