@@ -20,8 +20,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-    title: "EcoConnect",
-    description: "Digital Circular Economy dari Masyarakat untuk Masyarakat",
+    title: "Lingkar",
+    description: "Lingkungan Sadar Circular Economy",
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {

@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Lingkar – Lingkungan Sadar Circular Economy
 
-## Getting Started
+**Lingkar** adalah platform web yang mempertemukan **masyarakat**, **kurir sampah**, **UMKM/industri**, dan **investor** dalam satu ekosistem circular economy.  
+Tujuannya adalah **mendorong pengelolaan sampah berkelanjutan** sekaligus **menciptakan nilai ekonomi** dari proses daur ulang.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📖 Description
+Masih banyak sampah masyarakat yang berakhir di TPA tanpa pemilahan atau pengolahan. Lingkar hadir untuk menyelesaikan masalah ini dengan cara:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Menghubungkan Masyarakat & Kurir**  
+   - Masyarakat yang memilah sampah dapat melakukan **request penjemputan** melalui platform.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Distribusi ke UMKM/Industri**  
+   - Kurir menyalurkan sampah terpilah sebagai **bahan baku daur ulang** ke UMKM atau industri yang membutuhkan.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Mendukung Investor & Circular Economy**  
+   - Investor dapat mendukung proyek daur ulang dan **memantau dampak ekonomi sirkular** secara transparan.
 
-## Learn More
+4. **Meningkatkan Kesadaran Lingkungan**  
+   - Platform ini mendorong partisipasi aktif masyarakat dalam **mengurangi sampah dan menciptakan nilai dari limbah**.
 
-To learn more about Next.js, take a look at the following resources:
+**Alur singkat:**  
+> Masyarakat memilah sampah → Kurir menjemput → Sampah sampai ke UMKM/Industri → Investor mendukung proyek → Dampak lingkungan & ekonomi tercatat.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Dengan pendekatan ini, Lingkar **membuka peluang ekonomi baru sekaligus menciptakan dampak lingkungan yang nyata**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📖 Description
+Permasalahan sampah di masyarakat masih sering berakhir di TPA tanpa pemilahan dan pengolahan.  
+Lingkar hadir sebagai solusi digital untuk:
+- Menghubungkan **masyarakat** yang memilah sampah dengan **kurir** pengangkut.
+- Memberikan akses bahan baku daur ulang ke **UMKM/industri**.
+- Membuka peluang investasi bagi **investor** yang ingin mendukung circular economy.
+- Meningkatkan kesadaran dan partisipasi masyarakat terhadap ekonomi sirkular.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Dengan demikian, Lingkar tidak hanya fokus pada pengelolaan sampah, tetapi juga membangun **rantai nilai ekonomi berkelanjutan**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Technologies Used
+Project ini dibangun menggunakan:
+- [Next.js](https://nextjs.org/) – Framework React untuk frontend
+- [Tailwind CSS](https://tailwindcss.com/) – Styling modern & responsif
+- [TypeScript] – Bahasa pemrograman untuk keamanan kode
+- [Firebase] – Autentikasi
+- [PostgreSQL] – Database
+- [Vercel](https://vercel.com/) – Deployment
+
+---
+
+## ✨ Features
+- 👥 **Masyarakat**: dapat melakukan request penjemputan sampah terpilah.
+- 🚛 **Kurir**: menerima pesanan penjemputan sampah dari masyarakat.
+- 🏭 **UMKM/Industri**: membeli bahan baku daur ulang dari kurir.
+- 💰 **Investor**: mendukung pendanaan dan memantau dampak ekonomi sirkular.
+- 📊 **Dashboard**: menampilkan statistik jumlah sampah terkumpul, transaksi, dan dampak lingkungan.
+
+---
+
+## ⚡ Setup Instructions
+
+1. Clone repository
+   ```bash
+   git clone https://github.com/username/lingkar.git
+
+2. Masuk ke folder project
+   ```bash
+   cd lingkar
+
+3. Install dependencies
+   ```bash
+   npm install
+
+4. Jalankan development server
+   ```bash
+   npm run dev
+
+Buka http://localhost:3000 di browser.
+
+---
+
+## 🤖 AI Support Explanation
+
+Selama pengembangan, AI (IBM Granite, ChatGPT, GitHub Copilot) digunakan untuk:
+
+Membuat struktur boilerplate Next.js lebih cepat.
+
+Membantu menulis komponen UI dengan Tailwind CSS.
+
+Memberikan saran optimasi pada manajemen state & routing.
+
+Menyusun dokumentasi seperti README.md.
