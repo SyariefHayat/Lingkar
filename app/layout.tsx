@@ -1,5 +1,3 @@
-import Footer from "@/components/layouts/Footer";
-import Navbar from "@/components/layouts/Navbar";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 
@@ -30,9 +28,9 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
     return (
         <html lang="en">
             <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased font-poppins`}>
-                <Navbar />
-                {children}
-                <Footer />
+                <main>
+                    {children}
+                </main>
             </body>
         </html>
     );
