@@ -29,7 +29,7 @@ import { Calendar } from "@/components/ui/calendar";
 const ROLE_DASHBOARD_MAP = {
     "Masyarakat": "/dashboard/user",
     "Kurir Sampah": "/dashboard/courier", 
-    "UMKM / Industri Pengelola": "/dashboard/umkm",
+    "UMKM / Industri Pengelola": "/dashboard/partner",
     "Investor": "/dashboard/investor"
 };
 
