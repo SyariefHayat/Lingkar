@@ -4,14 +4,13 @@ import {
     SidebarProvider,
 } from "@/components/ui/sidebar"
 
-import data from "./data.json"
 import { DataTable } from "@/components/modules/dashboard/userDashboard/data-table"
-import { AppSidebar } from "@/components/modules/dashboard/userDashboard/app-sidebar"
-import { SiteHeader } from "@/components/modules/dashboard/userDashboard/site-header"
 import { SectionCards } from "@/components/modules/dashboard/userDashboard/section-cards"
 import { ChartAreaInteractive } from "@/components/modules/dashboard/userDashboard/chart-area-interactive"
+import { AppSidebar } from "@/components/modules/dashboard/courierDashboard/app-sidebar"
+import { SiteHeader } from "@/components/modules/dashboard/courierDashboard/site-header"
 
-export default function UserDashboard() {
+export default function CourierDashboard() {
     return (
         <SidebarProvider
             style={
